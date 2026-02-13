@@ -1,21 +1,15 @@
-# GitBot
+## GitBot Webhook
 
-GitBot is a webhook to integrate GitHub repositories with a Discord channel, automatically notifying about pushed commits.
+GitBot is a Node.js webhook that connects GitHub repositories to a Discord channel, automatically sending notifications about pushed commits.
 
-## Features
-- Receives push events from GitHub via webhook.
-- Sends formatted messages about commits to a Discord channel.
-- Supports OAuth2 authentication for interaction with the Discord API.
+### About
 
-## Requirements
-- Node.js installed (>=14.x recommended)
-- A configured Discord bot
-- A configured GitHub webhook
+GitBot is a webhook project developed using Node.js that integrates GitHub repositories with a Discord channel. It receives push events from GitHub and sends formatted messages about commits to Discord. The project includes support for OAuth2 authentication to interact with the Discord API. It was created to practice backend development, working with webhooks, APIs, and real-time notifications, providing hands-on experience with Node.js and event-driven programming.
 
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-user/gitbot.git
+   git clone https://github.com/user/gitbot.git
    cd gitbot
    ```
 
@@ -53,18 +47,10 @@ GitBot also supports authentication via OAuth2 to enable interaction with the Di
 https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=bot applications.commands webhook.incoming guilds
 ```
 
-## Project Structure
-```
-gitbot/
-│── config/
-│   │── .env         # Environment variables file
-│── src/
-│   │── monitor.js   # Main code
-│── package.json
-│── Dockerfile
-│── .gitignore
-│── README.md
-```
+<br>
+<p align="center" style="opacity:0.6;">
+MIT License – see the <a href="LICENSE">LICENSE</a> file for details.
+</p>
 
-## License
-This project is licensed under the MIT License. Feel free to modify and use it.
+
+
